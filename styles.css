@@ -1,0 +1,34 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+.menu-header {
+    margin: auto;
+    text-align: center;
+    padding: 30 0 30 0;
+    width: 100%;
+    font-size: 21px;
+}
+.breakfast-header {
+    margin: auto;
+    text-align: center;
+    padding: 20 0 30 0;
+    font-size: 20px;
+    border-top: solid rgb(145, 145, 145) 1px;
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    padding: 15px;
+    width: 33%;
+}

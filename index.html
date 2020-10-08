@@ -1,0 +1,44 @@
+<head>
+    <title>GCC menu email template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-header"><h1>MENU ITEMS</h1></div>
+    <div class="breakfast" id="breakfast">
+        <div class="breakfast-header"><h2>Breakfast</h2></div>
+        <table id="breakfast-table">
+        </table>
+    </div>
+    
+    <script>
+        let a = ["earth", " huge", "deny", "grant", "holistic"];
+        let b = ["contrast", "announce", "competition", "old-fashioned", "key", "book"];
+        let c = ["drain", "identify", "thin", "kick", "damp", "moist", "dreary"];
+
+        document.getElementById('breakfast-table').innerHTML = `
+            <tr>
+                <th>HICKS</th>
+                <th>MAP</th>
+                <th>GEDUNK</th>
+            </tr>`
+
+        for (let i = 0; i < c.length; i++) {
+            let output = '';
+            if (a[i] != undefined) {
+                output += `<td>${a[i]}</td>`;
+            } else {
+                output += `<td></td>`;
+            }
+            if (b[i] != undefined) {
+                output += `<td>${b[i]}</td>`;
+            } else {
+                output += `<td></td>`;
+            }
+
+            output+= `<td>${c[i]}</td>`;
+
+            document.getElementById('breakfast-table').innerHTML += output;
+        }
+
+    </script>
+</body>
